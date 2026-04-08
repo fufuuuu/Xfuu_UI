@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import XfuuUI from './components'
 
-console.log('hello world')
-
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(XfuuUI)
+app.mount('#app')
